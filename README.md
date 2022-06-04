@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/sujalachittor/cit281-p1/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Project 1
+## p1-random.js
+/*
+    CIT 281 Project 1
+    Name: Sujala Chittor
+*/
+// Returns a random number between min (inclusive) and max (exclusive)
+function getRandomInteger(min, max) {
+    //let min = 5;
+    //let max = 25;
+    let RandomInteger = Math.floor(Math.random() * (max - min) + min);
+    return RandomInteger
+}
 
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+function generateRandomLetter() {
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    //let part = str.slice
+    //let i = alphabet.charAt(getRandomInteger(0, alphabet.length));
+    let randomstr = "";
+    let ln = getRandomInteger(5, 26);
+for (let i = 0; i < ln; i++ ){ 
+  randomstr = randomstr + alphabet.charAt(getRandomInteger(0, alphabet.length));
+  //console.log(randomstr);
+  } 
+  console.log(ln, " ",randomstr);
+}
+generateRandomLetter();
 
-### Jekyll Themes
+## p1-date.js
+/*
+    CIT 281 Project 1
+    Name: Sujala Chittor
+*/
+console.log((["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][(new Date()).getDay()]));
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sujalachittor/cit281-p1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+  
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+  
+
+
+
+
+
