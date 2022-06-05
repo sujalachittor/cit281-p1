@@ -1,1 +1,1 @@
-Add description here
+Learn CLI and VSCode.
